@@ -32,7 +32,7 @@ jobs:
         run: |
           cat << 'EOF' > test.py
           import os
-          text = os.environ['TEST_KEY']
+          text = os.environ["TEST_KEY"]
           print(text)
           EOF
           python3 test.py
